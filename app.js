@@ -4,7 +4,7 @@
 
 // Item Controller
 const ItemCtrl = (function(){
-  
+  console.log('Item controller');
 })();
     
 
@@ -12,7 +12,9 @@ const ItemCtrl = (function(){
 
 
 // UI Controller
-
+const UICtrl = (function () {
+    console.log('UI controller');
+})();
 
 
 
