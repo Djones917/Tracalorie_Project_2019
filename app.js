@@ -19,3 +19,6 @@ const UICtrl = (function () {
 
 
 // App Controller
+const App = (function () {
+    console.log('App controller');
+})();
