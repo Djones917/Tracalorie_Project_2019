@@ -3,7 +3,7 @@
 
 
 // Item Controller
-const ItemCtrl = (function(){
+const ItemCtrl = (function() {
   console.log('Item controller');
 })();
     
@@ -12,13 +12,13 @@ const ItemCtrl = (function(){
 
 
 // UI Controller
-const UICtrl = (function () {
+const UICtrl = (function() {
     console.log('UI controller');
 })();
 
 
 
 // App Controller
-const App = (function () {
+const App = (function(ItemCtrl, UICtrl) {
     console.log('App controller');
-})();
+})(ItemCtrl, UICtrl);
