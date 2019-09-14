@@ -21,6 +21,12 @@ const ItemCtrl = (function() {
     currentItem: null,
     totalCalories: 0
   }
+
+  return {
+    logData: function() {
+      return data;
+    }
+  }
 })();
     
 
@@ -36,5 +42,15 @@ const UICtrl = (function() {
 
 // App Controller
 const App = (function(ItemCtrl, UICtrl) {
-    console.log('App controller');
+   
+  return {
+    init: function() {
+      console.log('Initializing App...');
+    }
+  }
+
 })(ItemCtrl, UICtrl);
+
+
+
+// Initialize App
