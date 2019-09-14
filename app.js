@@ -10,6 +10,13 @@ const ItemCtrl = (function() {
     this.name = name;
     this.calories = calories;
   }
+
+  // Data Structure / State
+  const data = {
+    items: [],
+    currentItem: null,
+    totalCalories: 0
+  }
 })();
     
 
