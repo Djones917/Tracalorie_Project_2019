@@ -24,6 +24,9 @@ const ItemCtrl = (function() {
   
   // Public Methods
   return {
+    getItems: function() {
+      return data.items;
+    },
     logData: function() {
       return data;
     }
