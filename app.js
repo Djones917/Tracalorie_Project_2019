@@ -42,7 +42,18 @@ const UICtrl = (function() {
 
     // Public Methods
     return {
+      populateItemList: function(items) {
+        let html = '';
 
+        items.forEach(function(item) {
+          html += `<li class="collection-item" id="item-${item.id}">
+        <strong>Steak Dinner: </strong> <em>1200 Calories</em>
+        <a href="#" class="secondary-content">
+          <i class="fa fa-pencil"></i>
+        </a>
+      </li>`;
+        });
+      }
     }
 
 })();
