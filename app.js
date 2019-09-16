@@ -54,11 +54,15 @@ const App = (function(ItemCtrl, UICtrl) {
   
   // Public Methods
   return {
-    init: function() {
-      console.log('Initializing App...');
+    init: function() {     
+
+      // Fetch Items from data structure
       const items = ItemCtrl.getItems();
 
-      console.log(items);
+      // Populate List with items
+      UICtrl.populateItemList(items);
+
+      
     }
   }
 
