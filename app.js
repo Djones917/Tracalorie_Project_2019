@@ -53,6 +53,9 @@ const UICtrl = (function() {
         </a>
       </li>`;
         });
+
+        // Insert List Items
+        document.querySelector('#item-list').innerHTML = html;
       }
     }
 
