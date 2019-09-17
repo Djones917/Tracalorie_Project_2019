@@ -49,7 +49,7 @@ const UICtrl = (function() {
           html += `<li class="collection-item" id="item-${item.id}">
         <strong>${item.name}: </strong> <em>${item.calories} Calories</em>
         <a href="#" class="secondary-content">
-          <i class="fa fa-pencil"></i>
+          <i class="edit-item fa fa-pencil"></i>
         </a>
       </li>`;
         });
