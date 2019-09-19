@@ -40,7 +40,8 @@ const ItemCtrl = (function() {
 // UI Controller
 const UICtrl = (function() {
     const UISelectors = {
-      itemList: '#item-list'
+      itemList: '#item-list',
+      addBtn: '.add-btn'
     }
 
     // Public Methods
@@ -59,6 +60,9 @@ const UICtrl = (function() {
 
         // Insert List Items
         document.querySelector(UISelectors.itemList).innerHTML = html;
+      },
+      getSelectors: function() {
+        return UISelectors;
       }
     }
 
@@ -69,7 +73,13 @@ const UICtrl = (function() {
 // App Controller
 const App = (function(ItemCtrl, UICtrl) {
   // Load Event Listeners
-  
+  const loadEventListeners = function() {
+    // Get UI Selectors
+    const UISelectors = UICtrl.getSelectors();
+
+    // Add item event
+
+  }
   
   // Public Methods
   return {
