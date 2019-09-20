@@ -65,8 +65,8 @@ const UICtrl = (function() {
       },
       getItemInput: function() {
         return {
-          name: '',
-          calories: ''
+          name: document.querySelectors(UISelectors.itemNameInput).value,
+          calories: document.querySelectors(UISelectors.itemCaloriesInput).value
         }
       },
       getSelectors: function() {
