@@ -27,6 +27,9 @@ const ItemCtrl = (function() {
     getItems: function() {
       return data.items;
     },
+    addItem: function(name, calories) {
+      console.log(name, calories);
+    },
     logData: function() {
       return data;
     }
@@ -96,7 +99,8 @@ const App = (function(ItemCtrl, UICtrl) {
     
     // Check for name and calorie
     if(input.name !== '' && input.calories !== '') {
-      console.log(123);
+      // Add item
+      const newItem = ItemCtrl.addItem(input.name, input.calories);
     }
 
     e.preventDefault();
