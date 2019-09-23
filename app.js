@@ -28,7 +28,13 @@ const ItemCtrl = (function() {
       return data.items;
     },
     addItem: function(name, calories) {
-      console.log(name, calories);
+      let ID;
+      // Create ID
+      if(data.items.length > 0) {
+        ID = data.items[data.items.length - 1].id + 1;
+      } else {
+        ID = 0;
+      }
     },
     logData: function() {
       return data;
