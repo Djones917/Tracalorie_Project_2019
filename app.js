@@ -38,6 +38,11 @@ const ItemCtrl = (function() {
 
       // Calories to number
       calories = parseInt(calories);
+
+      // Create New Item
+      newItem = new Item(ID, name, calories);
+
+      data.items.push(newItem);
     },
     logData: function() {
       return data;
