@@ -88,6 +88,11 @@ const UICtrl = (function() {
           calories: document.querySelectors(UISelectors.itemCaloriesInput).value
         }
       },
+      addListItem: function(item) {
+        // Create li element
+        const li = document.createElement('li');
+        
+      },
       getSelectors: function() {
         return UISelectors;
       }
@@ -117,6 +122,8 @@ const App = (function(ItemCtrl, UICtrl) {
     if(input.name !== '' && input.calories !== '') {
       // Add item
       const newItem = ItemCtrl.addItem(input.name, input.calories);
+      // Add Item To UI List
+      UICtrl.addListItem(newItem);
     }
 
     e.preventDefault();
