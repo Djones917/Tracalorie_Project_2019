@@ -91,7 +91,16 @@ const UICtrl = (function() {
       addListItem: function(item) {
         // Create li element
         const li = document.createElement('li');
-        
+        // Add class
+        li.className = 'collection-item';
+        // Add Id
+        li.id = `item-${item.id}`;
+        // Add HTML
+        li.innerHTML = `<strong>${item.name}: </strong> <em>${item.calories} Calories</em>
+        <a href="#" class="secondary-content">
+          <i class="edit-item fa fa-pencil"></i>
+        </a>`;
+
       },
       getSelectors: function() {
         return UISelectors;
