@@ -101,9 +101,11 @@ const UICtrl = (function() {
           <i class="edit-item fa fa-pencil"></i>
         </a>`;
         // Insert Item
-        document.querySelector(UISelectors.itemList).insertAdjacentElement('beforeend');
-
+        document.querySelector(UISelectors.itemList).insertAdjacentElement('beforeend', li);
       },
+      clearInput: function() {
+        document.querySelector(UISelectors.itemNameInput) = ''; 
+      },      
       getSelectors: function() {
         return UISelectors;
       }
@@ -135,6 +137,8 @@ const App = (function(ItemCtrl, UICtrl) {
       const newItem = ItemCtrl.addItem(input.name, input.calories);
       // Add Item To UI List
       UICtrl.addListItem(newItem);
+      // Clear Fields
+      UICtrl.clearInput();
     }
 
     e.preventDefault();
