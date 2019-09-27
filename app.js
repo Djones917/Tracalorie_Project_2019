@@ -105,6 +105,7 @@ const UICtrl = (function() {
       },
       clearInput: function() {
         document.querySelector(UISelectors.itemNameInput) = ''; 
+        document.querySelector(UISelectors.itemCaloriesInput) = ''; 
       },      
       getSelectors: function() {
         return UISelectors;
