@@ -14,9 +14,9 @@ const ItemCtrl = (function() {
   // Data Structure / State
   const data = {
     items: [
-      {id: 0, name: 'Steak Dinner', calories: 1200},
-      {id: 1, name: 'Cookie', calories: 400 },
-      {id: 2, name: 'Eggs', calories: 300 },
+      // {id: 0, name: 'Steak Dinner', calories: 1200},
+      // {id: 1, name: 'Cookie', calories: 400 },
+      // {id: 2, name: 'Eggs', calories: 300 }
     ],
     currentItem: null,
     totalCalories: 0
@@ -106,7 +106,10 @@ const UICtrl = (function() {
       clearInput: function() {
         document.querySelector(UISelectors.itemNameInput) = ''; 
         document.querySelector(UISelectors.itemCaloriesInput) = ''; 
-      },      
+      }, 
+      hideList: function() {
+        document.querySelector(UISelectors.itemList).style.display = 'none';
+      },     
       getSelectors: function() {
         return UISelectors;
       }
