@@ -73,6 +73,8 @@ const UICtrl = (function(){
   const UISelectors = {
     itemList: '#item-list',
     addBtn: '.add-btn',
+    updateBtn: '.update-btn',
+    deleteBtn: '.delete-btn',
     itemNameInput: '#item-name',
     itemCaloriesInput: '#item-calories',
     totalCalories: '.total-calories'
@@ -130,7 +132,7 @@ const UICtrl = (function(){
     },
     clearEditState: function() {
       UICtrl.clearInput();
-      
+
     },
     getSelectors: function(){
       return UISelectors;
