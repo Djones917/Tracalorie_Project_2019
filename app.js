@@ -215,6 +215,12 @@ const App = (function(ItemCtrl, UICtrl){
     e.preventDefault();  
   }
 
+  // Item update submit
+  const itemUpdateSubmit = function(e) {
+   
+    e.preventDefault();
+  }
+
   // Click edit item
   const itemEditClick = function(e){
     if(e.target.classList.contains('edit-item')){
